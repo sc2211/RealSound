@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./sA-6Yt.gif);
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:15px 0;
+}
+
+.logo{
+    width: 90px;
+    padding:0 50px;   
+}
+
+
+.navbar ul li{
+    list-style: none;
+    gap:50px;
+    margin:0 15px;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.navbar ul li a:hover{
+    color:magenta;
+}
+
+/* content */
+
+.content{
+ width: 100%; 
+ position:absolute;
+ top:30%;
+}
+
+.left-col{
+    margin-left: 6%;
+}
+
+.left-col h1{
+    float: left;
+    color:#fff;
+    line-height: 110px;;
+    font-size: 75px;;
+}
+
+.right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.right-col p{
+    font-size:30px;
+    color:white;
+    font-weight: 400;
+    margin-right: 15px;;
+}
+
+.right-col .play{
+    width: 80px;
+    cursor: pointer;
+    background-color:white;
+   
+}
+
+.marque{
+    padding-top:80px 0 ;
+    font-size:20px;
+}

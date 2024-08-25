@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+        <img src="./music-notes.png" class="logo">
+            <ul>
+                <li><a href="#"">Home</a></li>
+                <li><a href="#"">About</a></li>
+                <li><a href="#"">Specifications</a></li>
+                <li><a href="#"">Products</a></li>
+                <li><a href="#"">Connect</a></li>
+            </ul>
+        </mg>
+    </div>
+   </div>
+
+
+   <div class="content">
+    <div class="left-col">
+       <h1> The<br> Real<br> Sound</h1>
+    </div>
+    <div class="right-col">
+        <p>Click Here To Listen</p>
+        <img src="./play.png" id="icon">
+    </div>
+   </div>
+
+   <audio>
+    <audio id="Mysong">
+        <source src="./Namo Namo - Kedarnath(PagalWorldl).mp3" type="audio/mp3">
+    </audio>
+   </audio>
+ 
+  
+   <script>
+    let Mysong=document.getElementById("Mysong");
+    let icon=document.getElementById("icon");
+
+    icon.onclick=function(){
+        if(Mysong.paused){
+            Mysong.play();
+            icon.src="./pause.png";
+        }
+        else{
+            Mysong.pause();
+            icon.src="./play.png";
+        }
+    }
+    
+   </script>
+</body>
+</html>
